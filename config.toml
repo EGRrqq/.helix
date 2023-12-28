@@ -13,3 +13,17 @@ C-d = [ "half_page_down", "align_view_center" ]
 C-u = [ "half_page_up", "align_view_center" ]
 n = ["search_next", "align_view_center"]
 N = ["search_prev", "align_view_center"]
+A-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+A-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+A-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+A-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+A-right = "no_op"
+A-left = "no_op"
+S-up = "expand_selection"
+S-down = "shrink_selection"
+S-right = "select_next_sibling"
+S-left = "select_prev_sibling"
+
+[keys.insert]
+C-x="no_op"
+C-space = "completion"
