@@ -38,3 +38,9 @@ command="emmet-language-server"
 [[language]]
 name = "html"
 language-servers = ["vscode-html-language-server", "emmet-language-server"]
+
+# ts + prettier
+[[language]]
+name = "typescript"
+formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+auto-format = true
